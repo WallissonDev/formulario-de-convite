@@ -1,0 +1,47 @@
+/* Cores usadas no projeto */
+
+:root {
+    /* Brand Colors */
+
+    --brand-light: #59B2FF;
+    --brand-mid: #3487CF;
+    --brand-dark: #1D6FB6;
+
+    /* Accent Colors */
+    --purple: #B259FF;
+    --fuschia: #FF59F9;
+    --pink: #FF598B;
+    --orange: #FF8B59;
+    --yellow: #FFCD59;
+    --lime: #E1FF59;
+    --green: #59FF91;
+    --cyan: #59FFF9;
+    --navy: #6A59FF;
+
+    /* Feedback */
+    --danger: #FF5959;
+
+    /* Input */
+    --input-base: #1C1F21;
+    --input-stroke: #363B40;
+    --input-placeholder: #869198;
+
+    /* Shape */
+    --shape-background: #131516;
+    --shape-body: #212427;  
+    --shape-button: #2D3136;
+    --shape-hover: #383D42;
+
+    /* Text */
+    --text-body: #C8CDD0;
+    --text-heading: #F9F9F9;
+
+    /* Font Family */
+    --logo: normal 40px/auto "Leckerli One", cursive;
+    --heading-md: bold 28px/auto "Baloo 2", sans-serif;
+    --heading-sm: bold 18px/auto "Baloo 2", sans-serif;
+    --body-md: normal 16px/auto "Open Sans", sans-serif;
+    --body-sm: normal 14px/auto "Open Sans", sans-serif;
+    --body-xs: normal 12px/auto "Open Sans", sans-serif;
+
+}
