@@ -1,0 +1,32 @@
+main{
+    display: grid;
+
+    grid-template-columns: 1fr 3fr;
+}
+
+#aside-card{
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    gap: 6px;
+
+    position: sticky;
+    height: 100vh;
+    background-image: url(../assets/Background.png);
+    background-size: cover;
+
+    img{
+        width: 46px;
+        height: 48px;
+    }
+
+    h1{
+       font: var(--logo);
+       color: var(--pink);
+    }
+}
+
+.text-heading{
+    font: var(--body-xs);
+    color: var(--text-body)
+}
