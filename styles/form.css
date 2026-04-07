@@ -1,0 +1,94 @@
+/* Corpo inteiro do formulário - direita */
+
+label{
+    font: var(--body-sm);
+    color: var(--text-body);
+}
+
+input{
+    border: 1px solid var(--input-stroke);
+    background-color: var(--input-base);
+    height: 100%;
+    padding: 6px;
+
+    border-radius: 6px;
+
+    color: var(--text-body);
+    font: var(--body-md);
+}
+
+#button-type{
+    display: flex;
+
+    background-color: var(--input-base);
+    border: 1px solid var(--input-stroke);
+
+    border-radius: 6px;
+
+    width: 100%;
+    height: 100%;
+    
+    label{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        width: 100%;
+        height: 100%;
+        text-align: center;
+
+    }
+}
+
+
+textarea{
+    border: 1px solid var(--input-stroke);
+    background-color: var(--input-base);
+    padding: 6px;
+    border-radius: 6px;
+}
+
+#body-form{
+    display: flex;
+    flex-direction: column;
+    padding-left: 130px;
+    padding-right: 130px;
+
+    background-color: var(--shape-body);
+    border-radius: 10px;
+    margin-left: 10px;
+    padding-block: 80px;
+}
+
+#invite{
+    font: var(--heading-md);
+    color: var(--text-heading);
+
+}
+
+#about-event{
+    display: grid;
+    gap: 1rem;
+
+    grid-template: 
+    "about-space about-space" 1fr
+    "name-space name-space" 1fr
+    "start-space end-space" 1fr
+    "type-space local-space" 1fr 
+    "description-space description-space";
+    
+    grid-template-columns: 1fr 1fr;
+
+    > *{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #about-space{grid-area: about-space;}
+    #name-space{grid-area: name-space;}
+    #start-space{grid-area: start-space;}
+    #end-space{grid-area: end-space;}
+    #type-space{grid-area: type-space;}
+    #local-space{grid-area: local-space;}
+    #description-space{grid-area: description-space;}
+}

@@ -1,17 +1,28 @@
+body{
+    background-color: var(--shape-background);
+}
+
 main{
     display: grid;
 
     grid-template-columns: 1fr 3fr;
+
+    border: 10px solid var(--shape-background);
 }
+
+/* Card do lado esquerdo da page */
 
 #aside-card{
     display: flex;
     flex-direction: column;
+
     padding: 32px;
     gap: 6px;
+    border-radius: 10px;
 
     position: sticky;
     height: 100vh;
+
     background-image: url(../assets/Background.png);
     background-size: cover;
 
@@ -30,3 +41,4 @@ main{
     font: var(--body-xs);
     color: var(--text-body)
 }
+

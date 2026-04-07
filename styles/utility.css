@@ -43,11 +43,11 @@
     --text-heading: #F9F9F9;
 
     /* Font Family */
-    --logo: normal 40px "Leckerli One", cursive;
-    --heading-md: bold 28px "Baloo 2", sans-serif;
-    --heading-sm: bold 18px "Baloo 2", sans-serif;
-    --body-md: normal 16px "Open Sans", sans-serif;
-    --body-sm: normal 14px "Open Sans", sans-serif;
-    --body-xs: normal 12px "Open Sans", sans-serif;
+    --logo: normal 2.5rem "Leckerli One", cursive;
+    --heading-md: bold 1.75rem "Baloo 2", sans-serif;
+    --heading-sm: bold 1.125rem "Baloo 2", sans-serif;
+    --body-md: normal 1rem "Open Sans", sans-serif;
+    --body-sm: normal 0.875rem "Open Sans", sans-serif;
+    --body-xs: normal 0.75rem "Open Sans", sans-serif;
 
 }
