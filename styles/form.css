@@ -17,6 +17,22 @@ input{
     font: var(--body-md);
 }
 
+.text-header{
+    font: var(--heading-sm);
+    color: var(--text-heading);
+}
+
+#about-event .about-text{
+    display: flex;
+    flex-direction: row;
+
+    align-self: end;
+
+    img{
+        padding-right: 10px;
+    }
+}
+
 #button-type{
     display: flex;
 
