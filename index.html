@@ -20,33 +20,44 @@
             <h2 id="invite">Crie seu convite</h2>
             <form action="" id="about-event">
                 <p id="about-space">Sobre o evento</p>
+
                 <div id="name-space">
                     <label for="event-name">Título</label>
                     <input type="text" name="event-name" id="event-name" placeholder="Nome do Evento">
                 </div>
+
                 <div id="start-space">
                     <label for="start">Início</label>
                     <input type="datetime-local" name="start-date" id="start">
                 </div>
+
                 <div id="end-space">
                     <label for="end">Fim</label>
                     <input type="datetime-local" name="end-date" id="end">
                 </div>
+
                 <div id="type-space">
-                    <p for="type">Tipo</p>
+                    <p id="type">Tipo</p>
                     <div id="button-type">
-                        <label for="presential"><input type="radio" name="presencial" id="presential"> Presencial</label>
+                        <label for="presential">
+                            <input type="radio" name="presencial" id="presential" checked>
+                            Presencial</input>
+                            <div id="div-hover"></div>
+                        </label>
                         <label for="online"><input type="radio" name="presencial" id="online"> Online</label>
                     </div>
                 </div>
+
                 <div id="local-space">
                     <label for="local">Local</label>
                     <input type="text" name="local-adress" id="local" placeholder="Link ou Endereço">
                 </div>
+
                 <div id="description-space">
                     <label for="description">Descrição</label>
-                    <textarea name="description" id="description"></textarea>
+                    <textarea name="description" id="description" placeholder="Escreva sobre os detalhes do evento"></textarea>
                 </div>
+
             </form>
         </section>
     </main>
