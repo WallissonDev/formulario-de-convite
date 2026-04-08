@@ -166,3 +166,22 @@ textarea{
     #local-space{grid-area: local-space;}
     #description-space{grid-area: description-space;}
 }
+
+/* Area de customização */
+
+#customization{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+
+    h2{
+        font: var(--heading-sm);
+        color: white;
+
+    }
+
+    h2::before{
+        content: url(../assets/paintbrush-vertical.svg );
+        width: 24px;
+        height: 24px;
+    }
+}
