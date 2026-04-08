@@ -66,7 +66,13 @@ input{
         z-index: -1;
     }
 
+    input[type="radio"] {
+        display: none;
+    }
+
 }
+
+/* Animação de marcação de botão */
 #button-type:has(#presential:checked) #div-hover {
     transition: left 0.25s ease;
     left: 2%;
@@ -75,6 +81,35 @@ input{
     transition: left 0.25s ease;
     left: 97%; 
 }
+
+
+
+/* Animação do icone mudando de cor */
+
+#presential-icon::before{
+    content: url(../assets/building-2\ -\ unchecked.svg);
+    padding: 5px;
+    vertical-align: middle;
+}
+
+#online-icon::before{
+    content: url(../assets/video-unchecked.svg);
+    padding: 5px;
+    vertical-align: middle;
+}
+
+#button-type:has(#presential:checked){
+    #presential-icon::before{
+        content: url(../assets/building-checked.svg);
+    }
+}
+#button-type:has(#online:checked){
+    #online-icon::before{
+        content: url(../assets/video-checked-\ Copia.svg);
+    }
+}
+
+
 
 textarea{
     border: 1px solid var(--input-stroke);
