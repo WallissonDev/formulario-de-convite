@@ -33,6 +33,8 @@ input{
     }
 }
 
+
+/* Botões de Tipo */
 #button-type{
     display: flex;
 
@@ -143,10 +145,10 @@ textarea{
     gap: 1rem;
 
     grid-template: 
-    "about-space about-space" 1fr
-    "name-space name-space" 1fr
-    "start-space end-space" 1fr
-    "type-space local-space" 1fr 
+    "about-space about-space" 
+    "name-space name-space" 
+    "start-space end-space" 
+    "type-space local-space"  
     "description-space description-space";
     
     grid-template-columns: 1fr 1fr;
