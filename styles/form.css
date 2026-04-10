@@ -5,7 +5,7 @@ label, #type{
     color: var(--text-body);
 }
 
-input{
+#about-event input{
     border: 1px solid var(--input-stroke);
     background-color: var(--input-base);
     height: 100%;
@@ -169,6 +169,8 @@ textarea{
 
 /* Area de customização */
 
+
+/* Paleta de cores */
 p{
     font: var(--body-sm);
     color: var(--text-heading);
@@ -176,7 +178,6 @@ p{
 
 #customization{
     display: grid;
-    grid-template-rows: repeat(4, 1fr);
 
     h2{
         font: var(--heading-sm);
@@ -208,6 +209,7 @@ p{
         width: 28px;
         height: 28px;
         
+        cursor: pointer;
     }
 
     label{
@@ -238,3 +240,56 @@ p{
     #cyan{background-color: var(--cyan);}
 }
 
+/* Opções de tema do Evento */
+
+.event-theme{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+
+    label{
+        display: flex;
+        flex-direction: column;
+        
+        position: relative;
+
+        background-color: var(--shape-button);
+
+        border-radius: 12px;
+
+        width: 100%;
+        height: 100%;
+
+        img{
+            object-fit: cover;
+            object-position: center;
+            width: 100%;
+            height: 75%;
+            padding: 6px;
+            border-radius: 12px;
+        }
+
+        span{
+            font: var(--body-md);
+            color: var(--text-heading);
+            align-self: center;
+        }
+        
+    }
+
+    label:has(input:checked){
+        outline: 5px solid var(--brand-light);
+    }
+
+    
+    input{
+        appearance: none;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+    }
+
+
+}
