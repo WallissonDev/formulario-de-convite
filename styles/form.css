@@ -125,13 +125,10 @@ textarea{
 #body-form{
     display: flex;
     flex-direction: column;
-    padding-left: 130px;
-    padding-right: 130px;
-
+    padding: 80px 130px 80px 130px;
     background-color: var(--shape-body);
     border-radius: 10px;
     margin-left: 10px;
-    padding-block: 80px;
 }
 
 #invite{
@@ -263,7 +260,6 @@ p{
 
         img{
             object-fit: cover;
-            object-position: center;
             width: 100%;
             height: 75%;
             padding: 6px;
