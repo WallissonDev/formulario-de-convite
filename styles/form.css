@@ -290,6 +290,14 @@ p{
 
 }
 
+/* Seção de estilo e arquivo */
+
+#mode-field{
+    display: flex;
+    justify-content: flex-start;
+    gap: 300px;
+}
+
 /* Botão de estilo escuro */
 
 #main-dark{
@@ -363,4 +371,34 @@ p{
 
 /* Seção foto de capa botão de selecionar */
 
+
+#cover-photo{
+    display: flex;
+    flex-direction: column;
+
+
+    label{
+        display: flex;
+        align-items: center;
+
+        gap: 10px;
+        padding: 10px;
+
+        min-width: 120px;
+        height: 40px;
+
+        background-color: var(--shape-button);
+        border-radius: 6px;
+        
+        cursor: pointer;
+    }
+
+    label:hover{
+        outline: 2px solid var(--cyan);
+    }
+
+    input{
+        display: none;
+    }
+}
 
