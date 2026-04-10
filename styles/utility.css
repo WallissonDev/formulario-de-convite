@@ -23,6 +23,7 @@
     --green: #59FF91;
     --cyan: #59FFF9;
     --navy: #6A59FF;
+    --blue: var(--brand-light);
 
     /* Feedback */
     --danger: #FF5959;
