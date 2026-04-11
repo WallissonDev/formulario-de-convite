@@ -17,6 +17,8 @@ label, #type{
     font: var(--body-md);
 }
 
+
+
 .text-header{
     font: var(--heading-sm);
     color: var(--text-heading);
@@ -186,6 +188,7 @@ p{
         content: url(../assets/paintbrush-vertical.svg );
         width: 24px;
         height: 24px;
+        padding-right: 8px;
     }
 }
 
@@ -402,3 +405,51 @@ p{
     }
 }
 
+/* Área de entrar em contato */
+
+.input-body{
+    border: 1px solid var(--input-stroke);
+    background-color: var(--input-base);
+    height: 100%;
+    padding: 6px;
+
+    border-radius: 6px;
+
+    color: var(--text-body);
+    font: var(--body-md);
+}
+
+#contact-field{
+    display: flex;
+    flex-direction: column;
+    border: none;
+
+    legend{
+        font: var(--heading-sm);
+        color: white;
+    }
+
+    legend::before{
+        content: url(../assets/contact.svg);
+        vertical-align: middle;
+        padding-right: 8px;
+    }
+
+    #name-field{
+        display: grid;
+    }
+    
+    #contact{
+        display: grid;
+        gap: 16px;
+        grid-template-columns: repeat(2, 1fr);
+
+        div{
+            display: grid
+        }
+    }
+
+    input{
+
+    }
+}

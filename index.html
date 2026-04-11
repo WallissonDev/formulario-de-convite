@@ -13,7 +13,7 @@
     <main>
 
         <header id="aside-card">
-            <img src="assets/Logo.png" alt="Imagem bombinha de festa">
+            <img src="assets/Logo.png" alt="Imagem bombinha de festa" id="logo">
             <h1>Festivite</h1>
             <p class="text-heading">Crie um convite digital para o seu evento</p>
         </header>
@@ -189,6 +189,28 @@
 
                 </div>
             </form>
+
+            <fieldset id="contact-field">
+                <legend>Dados para o contato</legend>
+
+                <div id="name-field">
+                    <label for="name">Nome</label>
+                    <input type="text" name="complete-name" id="name" class="input-body" placeholder="Nome completo">
+                </div>
+
+                    <div id="contact">
+                        <div>
+                            <label for="">E-mail</label>
+                            <input type="email" name="e-mail" id="e-mail" class="input-body" placeholder="E-mail para contato">
+                        </div>
+                        <div>
+                            <label for="phone">Telefone</label>
+                            <input type="number" name="phone" id="phone" class="input-body" placeholder="(XX) XXXXX-XXXX">
+                        </div>
+                    </div>
+
+            </fieldset>
+
         </section>
 
     </main>
