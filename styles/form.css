@@ -453,3 +453,38 @@ p{
 
     }
 }
+
+/* Seção dos aceito de termos */
+
+#terms{
+
+
+    div{
+        display: flex;
+        padding-block: 6px;
+    }
+    
+    p{
+        padding-left: 6px;
+    }
+
+    label{
+        display: flex;
+
+        cursor: pointer;
+        width: 18px;
+        height: 18px;
+        border: 1px solid var(--input-stroke);
+        background-color: var(--input-base);
+        border-radius: 4px;
+
+        input{
+            appearance: none;
+        }
+    }
+
+    label:has(input:checked){
+        border: 1px solid var(--brand-light);
+        background-image: url(../assets/check.svg);
+    }
+}

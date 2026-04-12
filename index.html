@@ -195,22 +195,43 @@
 
                 <div id="name-field">
                     <label for="name">Nome</label>
-                    <input type="text" name="complete-name" id="name" class="input-body" placeholder="Nome completo">
+                    <input type="text" name="complete-name" id="name" class="input-body" placeholder="Nome completo" required>
                 </div>
 
                     <div id="contact">
                         <div>
                             <label for="">E-mail</label>
-                            <input type="email" name="e-mail" id="e-mail" class="input-body" placeholder="E-mail para contato">
+                            <input type="email" name="e-mail" id="e-mail" class="input-body" placeholder="E-mail para contato" required>
                         </div>
                         <div>
                             <label for="phone">Telefone</label>
-                            <input type="number" name="phone" id="phone" class="input-body" placeholder="(XX) XXXXX-XXXX">
+                            <input type="number" name="phone" id="phone" class="input-body" placeholder="(XX) XXXXX-XXXX" required>
                         </div>
                     </div>
 
             </fieldset>
-
+            <hr>
+            <div id="terms">
+                <div>
+                    <label for="conditions">
+                        <input type="checkbox" name="" id="conditions" required>
+                    </label>
+                    <p>Li e concordo com os <a href="">Termos e condições</a> e com a <a href="">Política de Privacidade</a>.</p>
+                </div>
+                <div>
+                    <label for="updates">
+                        <input type="checkbox" name="" id="updates">
+                    </label>
+                    <p>Aceito receber atualizações e promoções por e-mail.</p>
+                </div>
+                <div>
+                    <label for="sms">
+                        <input type="checkbox" name="" id="sms">
+                    </label>
+                    <p>Aceito receber atualizações e promoções por SMS.</p>
+                </div>
+            </div>
+            
         </section>
 
     </main>
