@@ -1,5 +1,6 @@
 /* Corpo inteiro do formulário - direita */
 
+
 label, #type{
     font: var(--body-sm);
     color: var(--text-body);
@@ -16,8 +17,6 @@ label, #type{
     color: var(--text-body);
     font: var(--body-md);
 }
-
-
 
 .text-header{
     font: var(--heading-sm);
@@ -486,5 +485,39 @@ p{
     label:has(input:checked){
         border: 1px solid var(--brand-light);
         background-image: url(../assets/check.svg);
+    }
+}
+
+/* Botão de finalizar e enviar formulário */
+
+#submit-form{
+    display: flex;
+
+    justify-content: center;
+    align-self: end;
+
+    width: 177px;
+    height: 48px;
+    
+    cursor: pointer;
+
+    border: 1px solid var(--brand-dark);
+    background-color: var(--brand-dark);
+    border-radius: 6px;
+
+    input{
+        background-color: var(--brand-dark);
+        border: none;
+        color: white;
+        font: var(--body-md);
+        font-weight: bold;
+        padding-left: 16px;
+        cursor: pointer;
+    }
+
+    img{
+        align-self: center;
+        width: 20px;
+        height: 20px;
     }
 }

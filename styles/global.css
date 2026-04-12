@@ -19,12 +19,12 @@ main{
 
     grid-area: 1 / 1 / 2 / 2;
 
+    position: sticky;
+    top: 0;
+
     padding: 32px;
     gap: 6px;
     border-radius: 10px;
-
-    position: sticky;
-    top: 0;
 
     background-image: url(../assets/Background.png);
     background-size: cover;
@@ -49,7 +49,7 @@ main{
 
 /* Formulario direita */
 
-#body-form{
+#main-form{
     grid-area: 1 / 2 / 3 / 4;
 }
 
