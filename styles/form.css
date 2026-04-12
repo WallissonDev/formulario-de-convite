@@ -177,6 +177,8 @@ p{
 #customization{
     display: grid;
 
+    gap: 16px;
+
     h2{
         font: var(--heading-sm);
         color: white;
@@ -189,6 +191,7 @@ p{
         height: 24px;
         padding-right: 8px;
     }
+
 }
 
 #main-color{
@@ -305,7 +308,7 @@ p{
 #main-dark{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    justify-content: space-between;
 
     #dark-text, #light-text{
         position: absolute;
@@ -377,7 +380,7 @@ p{
 #cover-photo{
     display: flex;
     flex-direction: column;
-
+    gap: 8px;
 
     label{
         display: flex;
@@ -422,6 +425,7 @@ p{
     display: flex;
     flex-direction: column;
     border: none;
+    gap: 18px;
 
     legend{
         font: var(--heading-sm);
@@ -436,6 +440,7 @@ p{
 
     #name-field{
         display: grid;
+        gap: 16px;
     }
     
     #contact{
@@ -444,7 +449,8 @@ p{
         grid-template-columns: repeat(2, 1fr);
 
         div{
-            display: grid
+            display: grid;
+            gap: 16px;
         }
     }
 
