@@ -1,5 +1,19 @@
 /* Corpo inteiro do formulário - direita */
 
+input:user-invalid {
+  border-color: var(--danger);
+}
+
+.error-message {
+    display: none;
+    color: var(--danger);
+    font: var(--body-xs);
+    margin-top: -8px; /* Compensa o gap dos containers para ficar próximo ao input */
+}
+
+input:user-invalid + .error-message {
+    display: block;
+}
 
 label, #type{
     font: var(--body-sm);
@@ -121,6 +135,7 @@ textarea{
     border-radius: 6px;
     height: 150px;
     resize: none;
+    color: white;
 }
 
 #body-form{
@@ -452,10 +467,6 @@ p{
             display: grid;
             gap: 16px;
         }
-    }
-
-    input{
-
     }
 }
 

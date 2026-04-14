@@ -29,15 +29,15 @@
                     </div>
                     <div id="name-space">
                         <label for="event-name">Título</label>
-                        <input type="text" name="event-name" id="event-name" placeholder="Nome do Evento">
+                        <input type="text" name="event-name" id="event-name" placeholder="Nome do Evento" required>
                     </div>
                     <div id="start-space">
                         <label for="start">Início</label>
-                        <input type="datetime-local" name="start-date" id="start">
+                        <input type="datetime-local" name="start-date" id="start" required>
                     </div>
                     <div id="end-space">
                         <label for="end">Fim</label>
-                        <input type="datetime-local" name="end-date" id="end">
+                        <input type="datetime-local" name="end-date" id="end" required>
                     </div>
                     <div id="type-space">
                         <p id="type">Tipo</p>
@@ -51,7 +51,7 @@
                     </div>
                     <div id="local-space">
                         <label for="local">Local</label>
-                        <input type="text" name="local-adress" id="local" placeholder="Link ou Endereço">
+                        <input type="text" name="local-adress" id="local" placeholder="Link ou Endereço" required>
                     </div>
                     <div id="description-space">
                         <label for="description">Descrição</label>
@@ -83,7 +83,7 @@
                             <label for="event-card">
                                 <img src="assets/aniversario.svg" alt="">
                                 <span>Aniversário</span>
-                                <input type="radio" name="event-card" id="">
+                                <input type="radio" name="event-card" id="" checked>
                             </label>
                             <label for="event-card">
                                 <img src="assets/infantil.svg" alt="">
@@ -173,15 +173,18 @@
                     <div id="name-field">
                         <label for="name">Nome</label>
                         <input type="text" name="complete-name" id="name" class="input-body" placeholder="Nome completo" required>
+                        <span class="error-message">Campo obrigatório</span>
                     </div>
                         <div id="contact">
                             <div>
                                 <label for="">E-mail</label>
-                                <input type="email" name="e-mail" id="e-mail" class="input-body" placeholder="E-mail para contato" required>
+                                <input type="email" name="e-mail" id="e-mail" class="input-body" placeholder="email@exemplo.com"  required>
+                                <span class="error-message">Campo obrigatório</span>
                             </div>
                             <div>
                                 <label for="phone">Telefone</label>
                                 <input type="number" name="phone" id="phone" class="input-body" placeholder="(XX) XXXXX-XXXX" required>
+                                <span class="error-message">Campo obrigatório</span>
                             </div>
                         </div>
                 </fieldset>
